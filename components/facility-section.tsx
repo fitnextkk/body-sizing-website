@@ -4,17 +4,17 @@ import { Dumbbell, Shirt, Droplets, SparklesIcon, MapPin } from 'lucide-react'
 
 const facilities = [
   {
-    image: '/images/facility-training.webp',
+    image: '/images/facility-training.jpg',
     title: 'トレーニングルーム',
     description: '豊富な器具を揃えた完全個室。他のお客様と顔を合わせることなく集中してトレーニングできます。',
   },
   {
-    image: '/images/facility-changing.webp',
+    image: '/images/facility-changing.jpg',
     title: '更衣室',
     description: '完全個室の清潔な更衣室。シューズのお預かりも無料で対応しております。',
   },
   {
-    image: '/images/facility-washroom.webp',
+    image: '/images/facility-washroom.jpg',
     title: '洗面アメニティ',
     description: '清潔なシャワールームを完備。タオルも無料でご用意しております。',
   },
