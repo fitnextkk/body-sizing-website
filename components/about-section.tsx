@@ -27,7 +27,7 @@ const features = [
 ]
 
 export function AboutSection() {
-  // Initial deployment trigger
+  // Force clean build - v2
   return (
     <section id="about" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
