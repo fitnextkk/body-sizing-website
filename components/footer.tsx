@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { MapPin, Phone, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-export function Footer() {
+export function Footer(): React.JSX.Element {
   return (
     <footer className="bg-card border-t border-border">
       {/* Final CTA Section */}
@@ -35,9 +35,9 @@ export function Footer() {
               variant="outline"
               className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10 text-base px-8 py-7"
             >
-              <Link href="#contact">
+              <a href="#contact">
                 メールフォームで予約
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
@@ -64,44 +64,44 @@ export function Footer() {
             <h4 className="font-semibold mb-4 text-sm">メニュー</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
+                <a
                   href="#about"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   About
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="#facility"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Facility
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="#results"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Before & After
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="#campaign"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Campaign
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="#contact"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

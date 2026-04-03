@@ -1,10 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import { MessageCircle, Calendar } from 'lucide-react'
 
-export function FloatingCTA() {
+export function FloatingCTA(): React.JSX.Element {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -29,13 +28,13 @@ export function FloatingCTA() {
           <MessageCircle className="h-4 w-4" />
           LINEで予約
         </a>
-        <Link
+        <a
           href="#contact"
           className="flex-1 flex items-center justify-center gap-2 h-14 rounded-lg bg-accent text-accent-foreground font-semibold text-sm shadow-md"
         >
           <Calendar className="h-4 w-4" />
           メール予約
-        </Link>
+        </a>
       </div>
     </div>
   )

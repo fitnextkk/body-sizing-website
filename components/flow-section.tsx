@@ -2,7 +2,6 @@
 
 import { MessageCircle, Users, CreditCard, Dumbbell, Trophy } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import Link from 'next/link'
 
 const steps = [
   {
@@ -98,9 +97,9 @@ export function FlowSection() {
           </Button>
           <p className="mt-3 text-sm text-muted-foreground">
             または{' '}
-            <Link href="#contact" className="text-accent hover:underline">
+            <a href="#contact" className="text-accent hover:underline">
               メールフォームから予約
-            </Link>
+            </a>
           </p>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { MapPin, CheckCircle2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -34,9 +33,9 @@ export function HeroSection() {
                 size="lg" 
                 className="w-full sm:w-auto text-base md:text-lg px-8 py-7 bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg"
               >
-                <Link href="#contact">
+                <a href="#contact">
                   無料カウンセリングを今すぐ予約する
-                </Link>
+                </a>
               </Button>
               <Button 
                 asChild 
@@ -44,9 +43,9 @@ export function HeroSection() {
                 size="lg" 
                 className="w-full sm:w-auto text-base px-8 py-6"
               >
-                <Link href="#results">
+                <a href="#results">
                   ビフォーアフターを見る
-                </Link>
+                </a>
               </Button>
             </div>
             
@@ -118,9 +117,9 @@ export function HeroSection() {
               size="lg" 
               className="w-full md:w-auto bg-accent hover:bg-accent/90 text-accent-foreground"
             >
-              <Link href="#contact">
+              <a href="#contact">
                 今すぐ予約する
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

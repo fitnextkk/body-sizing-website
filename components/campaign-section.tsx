@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Gift, Clock, Sparkles, AlertCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -93,9 +92,9 @@ export function CampaignSection() {
               size="lg"
               className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-base md:text-lg px-10 py-7 shadow-lg"
             >
-              <Link href="#contact">
+              <a href="#contact">
                 無料カウンセリングを今すぐ予約する
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

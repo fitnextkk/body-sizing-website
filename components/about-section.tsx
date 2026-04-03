@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { Target, Users, Clock, Award } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -109,9 +108,9 @@ export function AboutSection() {
                 size="lg" 
                 className="w-full sm:w-auto text-base px-8 py-6 bg-accent hover:bg-accent/90 text-accent-foreground"
               >
-                <Link href="#contact">
+                <a href="#contact">
                   無料カウンセリングを予約する
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

@@ -51,13 +51,13 @@ export function Header() {
 
           <nav className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </nav>
 
@@ -79,7 +79,7 @@ export function Header() {
             )}
 
             <Button asChild className="hidden md:inline-flex h-9 text-sm bg-accent hover:bg-accent/90 text-accent-foreground">
-              <Link href="#contact">無料カウンセリング</Link>
+              <a href="#contact">無料カウンセリング</a>
             </Button>
 
             <Button 
@@ -101,14 +101,14 @@ export function Header() {
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col gap-1">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.href}
                   href={item.href}
                   onClick={closeMenu}
                   className="py-3 px-2 text-base font-medium border-b border-border hover:text-accent transition-colors"
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
             </nav>
             <div className="mt-4 flex flex-col gap-3">
@@ -136,7 +136,7 @@ export function Header() {
                 className="w-full h-14 text-lg font-bold bg-accent hover:bg-accent/90 text-accent-foreground shadow-xl rounded-xl"
                 onClick={closeMenu}
               >
-                <Link href="#contact">無料カウンセリング予約</Link>
+                <a href="#contact">無料カウンセリング予約</a>
               </Button>
             </div>
           </div>
