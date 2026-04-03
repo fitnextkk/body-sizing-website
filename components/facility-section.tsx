@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { Dumbbell, Shirt, Droplets, SparklesIcon, MapPin } from 'lucide-react'
 
 const facilities = [
@@ -66,11 +65,11 @@ export function FacilitySection() {
           {facilities.map((facility, index) => (
             <div key={index} className="bg-card rounded-xl overflow-hidden shadow-sm border border-border">
               <div className="relative aspect-[4/3]">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={facility.image}
                   alt={facility.title}
-                  fill
-                  className="object-cover"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </div>
               <div className="p-4">
