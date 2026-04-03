@@ -64,7 +64,7 @@ export function AboutSection() {
           <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg bg-muted">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/trainer-chief.jpg"
+              src="/images/trainer-tsuchiya.jpg"
               alt="チーフトレーナー 土屋広夢"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
               className="rounded-xl"
