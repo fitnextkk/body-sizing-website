@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -83,13 +82,11 @@ export function ResultsSection() {
                     Before
                   </span>
                   <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={currentResult.beforeImage}
                       alt={`${currentResult.name} トレーニング前`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 45vw, 22vw"
-                      quality={80}
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
                       loading="lazy"
                     />
                   </div>
@@ -99,13 +96,11 @@ export function ResultsSection() {
                     After
                   </span>
                   <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg ring-2 ring-accent">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={currentResult.afterImage}
                       alt={`${currentResult.name} トレーニング後`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 45vw, 22vw"
-                      quality={80}
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
                       loading="lazy"
                     />
                   </div>
@@ -200,13 +195,11 @@ export function ResultsSection() {
               }`}
               aria-label={`${result.name}の結果を表示`}
             >
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={result.afterImage}
                 alt={`${result.name} の結果`}
-                fill
-                className="object-cover"
-                sizes="100px"
-                quality={70}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 loading="lazy"
               />
             </button>

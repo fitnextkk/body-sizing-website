@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { MapPin, CheckCircle2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -73,30 +72,22 @@ export function HeroSection() {
                 <div className="space-y-1.5">
                   <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Before</span>
                   <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src="/images/before-1.jpg"
                       alt="トレーニング前の体型"
-                      fill
-                      className="object-cover"
-                      priority
-                      loading="eager"
-                      sizes="(max-width: 640px) 45vw, (max-width: 1024px) 40vw, 25vw"
-                      quality={80}
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
                     />
                   </div>
                 </div>
                 <div className="space-y-1.5">
                   <span className="text-xs font-medium text-accent uppercase tracking-wider">After</span>
                   <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg ring-2 ring-accent">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src="/images/after-1.jpg"
                       alt="トレーニング後の体型"
-                      fill
-                      className="object-cover"
-                      priority
-                      loading="eager"
-                      sizes="(max-width: 640px) 45vw, (max-width: 1024px) 40vw, 25vw"
-                      quality={80}
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
                     />
                   </div>
                 </div>
