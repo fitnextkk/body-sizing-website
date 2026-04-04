@@ -1,21 +1,20 @@
 'use client'
 
-import Image from 'next/image'
 import { Dumbbell, Shirt, Droplets, SparklesIcon, MapPin } from 'lucide-react'
 
 const facilities = [
   {
-    image: '/images/facility-training.webp',
+    image: '/images/facility-training2.jpg',
     title: 'トレーニングルーム',
     description: '豊富な器具を揃えた完全個室。他のお客様と顔を合わせることなく集中してトレーニングできます。',
   },
   {
-    image: '/images/facility-changing.webp',
+    image: '/images/facility-changing2.jpg',
     title: '更衣室',
     description: '完全個室の清潔な更衣室。シューズのお預かりも無料で対応しております。',
   },
   {
-    image: '/images/facility-washroom.webp',
+    image: '/images/facility-washroom2.jpg',
     title: '洗面アメニティ',
     description: '清潔なシャワールームを完備。タオルも無料でご用意しております。',
   },
@@ -66,11 +65,10 @@ export function FacilitySection() {
           {facilities.map((facility, index) => (
             <div key={index} className="bg-card rounded-xl overflow-hidden shadow-sm border border-border">
               <div className="relative aspect-[4/3]">
-                <Image
+                <img
                   src={facility.image}
                   alt={facility.title}
-                  fill
-                  className="object-cover"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </div>
               <div className="p-4">

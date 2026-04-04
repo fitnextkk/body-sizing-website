@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { Target, Users, Clock, Award } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -63,12 +62,10 @@ export function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg bg-muted">
-            <Image
-              src="/images/trainer-chief.jpg"
+            <img
+              src="/images/trainer-tsuchiya2.jpg"
               alt="チーフトレーナー 土屋広夢"
-              fill
-              className="object-cover rounded-xl"
-              loading="lazy"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
           <div>
