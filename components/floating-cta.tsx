@@ -21,7 +21,7 @@ export function FloatingCTA() {
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background/95 backdrop-blur-md border-t border-border p-3 safe-area-inset-bottom">
       <div className="flex gap-2">
         <a
-          href="https://line.me/R/ti/p/%40cbg0709r"
+          href="https://line.me/R/ti/p/%40zxw6487t"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-[1.5] flex items-center justify-center gap-2 h-14 rounded-lg bg-[#06C755] text-white font-semibold text-sm shadow-md"
