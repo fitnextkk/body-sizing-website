@@ -24,7 +24,7 @@ export function Footer() {
               size="lg"
               className="bg-[#06C755] text-white hover:bg-[#06C755]/90 text-lg px-10 py-7 shadow-lg"
             >
-              <a href="https://line.me/R/ti/p/%40cbg0709r" target="_blank" rel="noopener noreferrer">
+              <a href="https://line.me/R/ti/p/%40zxw6487t" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-5 w-5 mr-2" />
                 LINEで予約する（24時間受付・最速返信）
               </a>
